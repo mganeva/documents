@@ -7,9 +7,8 @@ Since DNS detector bank is rotated during the measurements, Workspace2D is not s
 
 Implementation of LoadDNSSCD algorithm for DNS single crystal data reduction has shown, that MDHistoWorkspaces accelerate data reduction a lot (by factor of 1000), make it more transparent and robust. The example data reduction script and a test dataset are available at (https://github.com/mantidproject/mantid/pull/22095).
 
-The disadvantage of the MDHistoWorkspaces is that obly the uniform binning is supported. This causes problem with diffraction-mode (e.g. non-TOF) data. THe image below illustrates this problem. Points show the measured points and the blue stripes show the uniform bins.
+The disadvantage of the MDHistoWorkspaces is that obly the uniform binning is supported. This causes problem with diffraction-mode (e.g. non-TOF) data. The image below illustrates this problem. Points show the measured points and the blue stripes show the uniform bins.
 
-MDHistoworkspaces
 ![measured points in uniform binning](ubin.png)
 
 As one can see, the uniform binning for these data causes loss of the resolution.
